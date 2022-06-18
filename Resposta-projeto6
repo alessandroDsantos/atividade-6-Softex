@@ -1,0 +1,137 @@
+inclua biblioteca Matematica --> mat
+    
+	funcao inicio() {
+		
+		cadeia nomeA[5], nomeB[5], nomeC[5], nomeD[5], nome_maiorA
+		real nvesA[5], nvesB[5], nvesC[5], nvesD[5], maiorA, maiorB, maiorC, maiorD, semi1, semi2, final
+		
+		//Turma A
+		para (inteiro numero = 0; numero < 5; numero++){
+		    escreva("Turma A:\n")
+		    escreva("Digite o nome do Aluno da turma A: ")
+		    leia(nomeA[numero])
+		    escreva("Digite a nota do Aluno da turma A: ")
+		    leia(nvesA[numero])
+		    limpa()
+		}
+		
+		//Turma B
+		para (inteiro numero = 0; numero < 5; numero++){
+		    escreva("Turma B:\n")
+		    escreva("Digite o nome do Aluno da turma B: ")
+		    leia(nomeB[numero])
+		    escreva("Digite a nota do Aluno da turma B: ")
+		    leia(nvesB[numero])
+		    limpa()
+		}
+		
+		//Turma C
+		para (inteiro numero = 0; numero < 5; numero++){
+		    escreva("Turma C:\n")
+		    escreva("Digite o nome do Aluno da turma C: ")
+		    leia(nomeC[numero])
+		    escreva("Digite a nota do Aluno da turma C: ")
+		    leia(nvesC[numero])
+		    limpa()
+		}
+		
+		//Turma D
+		para (inteiro numero = 0; numero < 5; numero++){
+		    escreva("Turma D:\n")
+		    escreva("Digite o nome do Aluno da turma D: ")
+		    leia(nomeD[numero])
+		    escreva("Digite a nota do Aluno da turma D: ")
+		    leia(nvesD[numero])
+		    limpa()
+		}
+		
+		
+		maiorA = nvesA[0]
+		maiorB = nvesB[0]
+		maiorC = nvesC[0]
+		maiorD = nvesD[0]
+		
+		
+	    //TURMA A classificados 
+		escreva("Alunos da turma A que foram APROVADOS no VESTIBULAR:")
+		para(inteiro numero = 0; numero < 5; numero++){
+		    se (nvesA[numero] >= 7.0){
+		        escreva("\nNome:",nomeA[numero],"/ Nota:",nvesA[numero])
+		        }
+		}
+		//Turma A Primeiro lugar
+        para (inteiro i = 0; i < 5; i++){
+            se(maiorA < nvesA[i]){
+            maiorA = nvesA[i]
+            //nome_maiorA = nomeA[i] não estou coseguindo colocar os dados do vetor na variavel
+            escreva("\n",nomeA[i]," tem a maior nota da turma A com ")
+            }
+            
+        }
+		escreva(maiorA)
+    
+       
+        //TURMA B classificados
+		escreva("\nAlunos da turma B que foram APROVADOS no VESTIBULAR:")
+		para(inteiro numero = 0; numero < 5; numero++){
+		    se (nvesB[numero] >= 7.0){
+		        escreva("\nNome:",nomeB[numero],"/ Nota:",nvesB[numero])
+		        }
+		}
+		//Turma B Primeiro lugar
+        para (inteiro i = 0; i < 5; i++){
+            se(maiorB < nvesB[i]){
+            maiorB = nvesB[i]
+            //nome_maiorB = nomeB[i] não estou coseguindo colocar os dados do vetor na variavel
+            escreva("\n",nomeB[i]," tem a maior nota da turma B com ")
+            }
+            
+        }
+        escreva(maiorB)
+        
+       
+        //TURMA C classificados
+		escreva("\nAlunos da turma C que foram APROVADOS no VESTIBULAR:")
+		para(inteiro numero = 0; numero < 5; numero++){
+		    se (nvesC[numero] >= 7.0){
+		        escreva("\nNome:",nomeC[numero],"/ Nota:",nvesC[numero])
+		        }
+		}
+		//Turma C Primeiro lugar
+        para (inteiro i = 0; i < 5; i++){
+            se(maiorC < nvesC[i]){
+            maiorC = nvesC[i]
+            //nome_maiorC = nomeC[i] não estou coseguindo colocar os dados do vetor na variavel
+            escreva("\n",nomeC[i]," tem a maior nota da turma C com ")
+            }
+            
+        }
+        escreva(maiorC)
+        
+        
+        //TURMA D classificados
+		escreva("\nAlunos da turma D que foram APROVADOS no VESTIBULAR:")
+		para(inteiro numero = 0; numero < 5; numero++){
+		    se (nvesD[numero] >= 7.0){
+		        escreva("\nNome:",nomeD[numero],"/ Nota:",nvesD[numero])
+		        }
+		}
+		//Turma D Primeiro lugar
+        para (inteiro i = 0; i < 5; i++){
+            se(maiorD < nvesD[i]){
+            maiorD = nvesD[i]
+            //nome_maiorD = nomeD[i] não estou coseguindo colocar os dados do vetor na variavel
+            escreva("\n",nomeD[i]," tem a maior nota da turma D com ")
+            }
+            
+        }
+        escreva(maiorD)
+        
+        semi1 = mat.maior_numero(maiorA, maiorB)
+        semi2 = mat.maior_numero(maiorC, maiorD)
+        final = mat.maior_numero(semi1, semi2)
+        
+        escreva("\nA maior nota foi:",final)
+        
+        
+	}
