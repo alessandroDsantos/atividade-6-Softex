@@ -2,11 +2,11 @@ inclua biblioteca Matematica --> mat
     
 	funcao inicio() {
 		
-		cadeia nomeA[5], nomeB[5], nomeC[5], nomeD[5], nome_maiorA
-		real nvesA[5], nvesB[5], nvesC[5], nvesD[5], maiorA, maiorB, maiorC, maiorD, semi1, semi2, final
+		cadeia nomeA[25], nomeB[25], nomeC[25], nomeD[25], nome_maiorA
+		real nvesA[25], nvesB[25], nvesC[25], nvesD[25], maiorA, maiorB, maiorC, maiorD, semi1, semi2, final
 		
 		//Turma A
-		para (inteiro numero = 0; numero < 5; numero++){
+		para (inteiro numero = 0; numero < 25; numero++){
 		    escreva("Turma A:\n")
 		    escreva("Digite o nome do Aluno da turma A: ")
 		    leia(nomeA[numero])
@@ -16,7 +16,7 @@ inclua biblioteca Matematica --> mat
 		}
 		
 		//Turma B
-		para (inteiro numero = 0; numero < 5; numero++){
+		para (inteiro numero = 0; numero < 25; numero++){
 		    escreva("Turma B:\n")
 		    escreva("Digite o nome do Aluno da turma B: ")
 		    leia(nomeB[numero])
@@ -26,7 +26,7 @@ inclua biblioteca Matematica --> mat
 		}
 		
 		//Turma C
-		para (inteiro numero = 0; numero < 5; numero++){
+		para (inteiro numero = 0; numero < 25; numero++){
 		    escreva("Turma C:\n")
 		    escreva("Digite o nome do Aluno da turma C: ")
 		    leia(nomeC[numero])
@@ -36,7 +36,7 @@ inclua biblioteca Matematica --> mat
 		}
 		
 		//Turma D
-		para (inteiro numero = 0; numero < 5; numero++){
+		para (inteiro numero = 0; numero < 25; numero++){
 		    escreva("Turma D:\n")
 		    escreva("Digite o nome do Aluno da turma D: ")
 		    leia(nomeD[numero])
@@ -54,13 +54,13 @@ inclua biblioteca Matematica --> mat
 		
 	    //TURMA A classificados 
 		escreva("Alunos da turma A que foram APROVADOS no VESTIBULAR:")
-		para(inteiro numero = 0; numero < 5; numero++){
+		para(inteiro numero = 0; numero < 25; numero++){
 		    se (nvesA[numero] >= 7.0){
 		        escreva("\nNome:",nomeA[numero],"/ Nota:",nvesA[numero])
 		        }
 		}
 		//Turma A Primeiro lugar
-        para (inteiro i = 0; i < 5; i++){
+        para (inteiro i = 0; i < 25; i++){
             se(maiorA < nvesA[i]){
             maiorA = nvesA[i]
             //nome_maiorA = nomeA[i] não estou coseguindo colocar os dados do vetor na variavel
@@ -73,13 +73,13 @@ inclua biblioteca Matematica --> mat
        
         //TURMA B classificados
 		escreva("\nAlunos da turma B que foram APROVADOS no VESTIBULAR:")
-		para(inteiro numero = 0; numero < 5; numero++){
+		para(inteiro numero = 0; numero < 25; numero++){
 		    se (nvesB[numero] >= 7.0){
 		        escreva("\nNome:",nomeB[numero],"/ Nota:",nvesB[numero])
 		        }
 		}
 		//Turma B Primeiro lugar
-        para (inteiro i = 0; i < 5; i++){
+        para (inteiro i = 0; i < 25; i++){
             se(maiorB < nvesB[i]){
             maiorB = nvesB[i]
             //nome_maiorB = nomeB[i] não estou coseguindo colocar os dados do vetor na variavel
@@ -92,13 +92,13 @@ inclua biblioteca Matematica --> mat
        
         //TURMA C classificados
 		escreva("\nAlunos da turma C que foram APROVADOS no VESTIBULAR:")
-		para(inteiro numero = 0; numero < 5; numero++){
+		para(inteiro numero = 0; numero < 25; numero++){
 		    se (nvesC[numero] >= 7.0){
 		        escreva("\nNome:",nomeC[numero],"/ Nota:",nvesC[numero])
 		        }
 		}
 		//Turma C Primeiro lugar
-        para (inteiro i = 0; i < 5; i++){
+        para (inteiro i = 0; i < 25; i++){
             se(maiorC < nvesC[i]){
             maiorC = nvesC[i]
             //nome_maiorC = nomeC[i] não estou coseguindo colocar os dados do vetor na variavel
@@ -111,13 +111,13 @@ inclua biblioteca Matematica --> mat
         
         //TURMA D classificados
 		escreva("\nAlunos da turma D que foram APROVADOS no VESTIBULAR:")
-		para(inteiro numero = 0; numero < 5; numero++){
+		para(inteiro numero = 0; numero < 25; numero++){
 		    se (nvesD[numero] >= 7.0){
 		        escreva("\nNome:",nomeD[numero],"/ Nota:",nvesD[numero])
 		        }
 		}
 		//Turma D Primeiro lugar
-        para (inteiro i = 0; i < 5; i++){
+        para (inteiro i = 0; i < 25; i++){
             se(maiorD < nvesD[i]){
             maiorD = nvesD[i]
             //nome_maiorD = nomeD[i] não estou coseguindo colocar os dados do vetor na variavel
